@@ -1,0 +1,57 @@
+{
+  "name": "new-egg-fly",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "captchapng": "^0.0.1",
+    "crypto": "^1.0.1",
+    "egg": "^2.2.1",
+    "egg-jwt": "^3.0.0",
+    "egg-redis": "^2.0.0",
+    "egg-scripts": "^2.5.0",
+    "egg-sequelize": "^3.1.2",
+    "egg-session-redis": "^1.0.0",
+    "egg-view-nunjucks": "^2.2.0",
+    "moment": "^2.22.0",
+    "mysql2": "^1.5.3",
+    "nodemailer": "^4.6.4",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "request": "^2.85.0",
+    "validator.tool": "^1.0.10"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^4.3.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.14.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^6.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-new-egg-fly",
+    "stop": "egg-scripts stop --title=egg-server-new-egg-fly",
+    "dev": "egg-bin dev --port=80",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
